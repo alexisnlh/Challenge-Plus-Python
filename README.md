@@ -4,6 +4,24 @@
 
 Como primer reto: Algoritmo optimizado para encontrar la distancia máxima entre digramas idénticos en una cadena de texto.
 
+<a id="tabla-de-contenidos"></a>
+## 📋 Tabla de Contenidos
+
+- [Descripción del Problema](#descripcion)
+- [Objetivo](#objetivo)
+- [Casos de Ejemplo](#ejemplos)
+- [Instalación](#instalación)
+- [Uso](#uso)
+- [Tests Incluidos](#tests)
+- [Estructura del Código](#estructura-del-código)
+- [Validaciones](#validaciones)
+- [Funciones Principales](#funciones-principales)
+- [Características Adicionales](#características-adicionales)
+- [Ejemplos de Uso Avanzados](#ejemplos-avanzados)
+- [Licencia](#licencia)
+- [Autor](#autor)
+
+<a id="descripcion"></a>
 ## 📋 Descripción del Problema
 
 Un **digrama** es una secuencia de dos letras adyacentes dentro de un string. La **distancia** entre dos digramas es la diferencia de posición entre el primer carácter del primer digrama y el primer carácter del segundo digrama.
@@ -14,10 +32,12 @@ En el string `'aakmaakmakda'`:
 - Los digramas `'ak'` aparecen en las posiciones **2** y **9**
 - La distancia entre ellos es: `9 - 2 = 7`
 
+<a id="objetivo"></a>
 ## 🎯 Objetivo
 
 Encontrar la **distancia máxima** entre dos digramas idénticos en un string. Si no existen digramas repetidos, devolver `-1`.
 
+<a id="ejemplos"></a>
 ## 🚀 Casos de Ejemplo
 
 | Input | Output | Explicación |
@@ -28,6 +48,9 @@ Encontrar la **distancia máxima** entre dos digramas idénticos en un string. S
 | `'abcabc'` | `3` | Digramas `'ab'` en posiciones 1 y 4 |
 | `'aa'` | `-1` | Solo existe un digrama |
 
+**[⬆ back to top](#tabla-de-contenidos)**
+
+<a id="instalación"></a>
 ## ⚙️ Instalación
 
 ### Requisitos
@@ -40,6 +63,9 @@ git clone https://github.com/alexisnlh/Challenge-Plus-Python.git
 cd challenge_plus_python
 ```
 
+**[⬆ back to top](#tabla-de-contenidos)**
+
+<a id="uso"></a>
 ## 💻 Uso
 
 ### Modo Interactivo
@@ -83,6 +109,9 @@ result = find_max_digram_distance("aakmaakmakda")
 print(result)     # Output: 7
 ```
 
+**[⬆ back to top](#tabla-de-contenidos)**
+
+<a id="tests"></a>
 ## 🧪 Tests Incluidos
 
 El script incluye 11 test cases que validan:
@@ -112,6 +141,9 @@ Tests: 11 pasados, 0 fallidos
 ==================================================
 ```
 
+**[⬆ back to top](#tabla-de-contenidos)**
+
+<a id="estructura-del-código"></a>
 ## 🏗️ Estructura del Código
 
 ```python
@@ -124,6 +156,9 @@ digram_optimizer.py
 └── main()      # Punto de entrada
 ```
 
+**[⬆ back to top](#tabla-de-contenidos)**
+
+<a id="validaciones"></a>
 ## 🛡️ Validaciones
 
 El script valida automáticamente:
@@ -132,6 +167,8 @@ El script valida automáticamente:
 - ✅ Límite máximo de 300,000 caracteres
 - ✅ Conversión automática a minúsculas
 
+
+<a id="funciones-principales"></a>
 ## 🔧 Funciones Principales
 
 ### `find_max_digram_distance(str_var: str) -> int`
@@ -153,6 +190,9 @@ Valida el input del usuario.
 ### `format_result(str_var: str, result: int) -> str`
 Formatea el resultado mostrando los digramas encontrados y sus posiciones.
 
+**[⬆ back to top](#tabla-de-contenidos)**
+
+<a id="características-adicionales"></a>
 ## 🎨 Características Adicionales
 
 - 🎯 **Output detallado** - Muestra qué digramas se encontraron y en qué posiciones
@@ -160,6 +200,7 @@ Formatea el resultado mostrando los digramas encontrados y sus posiciones.
 - 🖥️ **Modo CLI y modo interactivo** - Flexibilidad de uso
 - ✅ **Type hints completos** - Mejor documentación y autocompletado
 
+<a id="ejemplos-avanzados"></a>
 ## 📚 Ejemplos de Uso Avanzados
 
 ### Integración en otro script
@@ -186,10 +227,12 @@ with open('strings.txt', 'r') as f:
         print(f"{s}: {result}")
 ```
 
+<a id="licencia"></a>
 ## 📄 Licencia
 
 Proyecto educativo sin licencia específica.
 
+<a id="autor"></a>
 ## 👨‍💻 Autor
 
 Desarrollado como parte de **Code Extra Challenge Python 2022**
@@ -197,3 +240,5 @@ Desarrollado como parte de **Code Extra Challenge Python 2022**
 ---
 
 ⭐ Si te resultó útil, dale una estrella al repositorio!
+
+**[⬆ back to top](#tabla-de-contenidos)**
